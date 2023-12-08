@@ -118,6 +118,10 @@ main {
   margin-top: var(--nav-header-height);
 }
 
+p {
+  line-height: 23px;
+}
+
 .no_select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */

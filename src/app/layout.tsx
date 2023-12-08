@@ -1,12 +1,12 @@
 import Navbar from 'layout/header/navbar'
 import '../styles/globals.scss'
 import type {Metadata} from 'next'
-import {DM_Sans, Oxygen_Mono} from 'next/font/google'
+import {DM_Sans, Schibsted_Grotesk} from 'next/font/google'
 
 // primary font
-const oxygenMono = Oxygen_Mono({
+const schibstedGrotesk = Schibsted_Grotesk({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '500', '700'],
   style: ['normal'],
   display: 'swap',
   variable: '--font-primary',
@@ -30,7 +30,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body
-        className={`${DmSans.className} ${DmSans.variable} ${oxygenMono.variable}`}
+        className={`${DmSans.className} ${DmSans.variable} ${schibstedGrotesk.variable}`}
       >
         <Navbar />
         {children}

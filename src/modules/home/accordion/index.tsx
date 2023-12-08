@@ -1,7 +1,7 @@
 import Container from 'layout/container'
 import React from 'react'
 import styles from './styles.module.scss'
-import SelectionList from 'layout/selectionSection/selectionList'
+import SelectionList from 'layout/selection'
 
 function SectionTwo() {
   return (

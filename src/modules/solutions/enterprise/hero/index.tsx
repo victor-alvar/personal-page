@@ -1,5 +1,5 @@
 // import React, {ReactNode} from 'react'
-import HeroContainer from 'layout/hero/heroContainer'
+import HeroContainer from 'layout/hero'
 import HeroContent from 'layout/hero/heroContent'
 import Image from '/public/images/email-marketing-header.png'
 import ButtonContainer from 'layout/container/buttonContainer'

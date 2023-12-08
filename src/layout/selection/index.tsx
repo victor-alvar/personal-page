@@ -2,6 +2,8 @@
 import React, {useState} from 'react'
 import styles from './styles.module.scss'
 import Hello from '/public/images/dashboard-image.jpg'
+import Cards from 'layout/cards'
+import Terminal from 'layout/terminal'
 
 interface SelectionListProps {
   label?: string
@@ -68,9 +70,17 @@ const SelectionList: React.FC<SelectionListProps> = ({label, className}) => {
           ))}
         </div>
       </div>
-      {selectionContent.map((item, index) => (
-        <div></div>
-      ))}
+      <div>
+        {isActive == 0 ? (
+          <div>
+            <Terminal />
+          </div>
+        ) : (
+          <div>
+            <Cards />
+          </div>
+        )}
+      </div>
     </>
   )
 }

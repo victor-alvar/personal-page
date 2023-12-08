@@ -1,14 +1,9 @@
 import React from 'react'
 import Container from 'layout/container'
+import Hero from 'layout/hero'
 
-function Hero() {
-  return (
-    <section>
-      <Container>
-        <div></div>
-      </Container>
-    </section>
-  )
+function HeroHome() {
+  return <Hero />
 }
 
-export default Hero
+export default HeroHome

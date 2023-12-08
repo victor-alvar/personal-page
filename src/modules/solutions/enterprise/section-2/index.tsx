@@ -2,7 +2,7 @@ import SectionContainer from 'layout/container'
 import React from 'react'
 import styles from './styles.module.scss'
 import SectionTitle from 'components/ui/titles'
-import SelectionList from 'layout/selectionSection/selectionList'
+import SelectionList from 'layout/selection'
 
 function SectionTwo() {
   return (
