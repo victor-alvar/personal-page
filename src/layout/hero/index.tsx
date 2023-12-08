@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import MatrixBackground from 'layout/matrix'
 
 const Hero = () => {
   return (
@@ -17,6 +18,9 @@ const Hero = () => {
                 easier.
               </p>
             </span>
+          </div>
+          <div className={styles.animation__wrap}>
+            <MatrixBackground />
           </div>
         </div>
       </div>

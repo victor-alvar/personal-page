@@ -15,7 +15,8 @@
   height: 100vh;
   min-height: 100%;
   line-height: initial;
-  padding: 2rem var(--page-padding-horizontal) 6rem;
+  padding: 2rem var(--page-padding-horizontal) 0;
+  margin-bottom: 6rem;
 }
 
 .wrap {
@@ -27,7 +28,7 @@
 
 .content__wrap {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -64,4 +65,12 @@
       inline-size: 70%;
     }
   }
+}
+
+.animation__wrap {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 50%;
 }
