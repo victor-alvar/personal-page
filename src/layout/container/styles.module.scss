@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-shrink: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-top: var(--section-padding-vertical);
+  padding-bottom: var(--section-padding-vertical);
+  padding-left: var(--page-padding-horizontal);
+  padding-right: var(--page-padding-horizontal);
+  flex-direction: column;
+}
