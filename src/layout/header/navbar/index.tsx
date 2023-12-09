@@ -1,5 +1,7 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
-// import logo from '/public/images/logo-horizontal.png'
+import logo from '/public/images/logo.png'
+import Image from 'next/image'
 
 const Navbar: React.FC = () => {
   return (
@@ -9,22 +11,21 @@ const Navbar: React.FC = () => {
         role="navigation"
         aria-label="Primary Navigation"
       >
-        {/* <Link
+        <Link
           href="/"
           data-clog-click
-          aria-label="Atalaso"
+          aria-label="Victor Alvar"
           data-qa="logo"
-          onClick={() => setOpen(false)}
           className={styles.logo__link}
         >
-           <Image
+          <Image
             src={logo}
-            alt="Atalaso logo"
+            alt="Victor Alvar logo"
             width={200}
             quality={100}
-            className="desktop"
-          /> 
-        </Link> */}
+            className={styles.logo}
+          />
+        </Link>
       </nav>
     </header>
   )

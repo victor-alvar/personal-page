@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     'data science',
   ],
   icons: {
-    icon: '/images/favicon/favicon.ico',
-    shortcut: '/images/favicon/favicon.ico',
+    icon: '/images/icons/favicon.ico',
+    shortcut: '/images/icons/favicon.ico',
     apple: [
       {
-        url: '/images/favicon/apple-touch-icon.png',
+        url: '/images/icons/apple-touch-icon.png',
         sizes: '180x180',
         type: 'image/png',
       },
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/images/favicon/favicon.ico',
+        url: '/images/icons/favicon.ico',
         sizes: '16x16',
       },
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/images/favicon/favicon-32x32.png',
+        url: '/images/icons/favicon-32x32.png',
         sizes: '32x32',
       },
     ],

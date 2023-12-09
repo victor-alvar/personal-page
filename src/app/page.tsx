@@ -30,7 +30,7 @@ export const metadata = {
     siteName: 'Victor Alvar',
     images: [
       {
-        url: 'https://www.victor-alvar.com/images/social/atalaso-share-preview.png',
+        url: 'https://www.victor-alvar.com/images/social/banner.png',
         width: 1200,
         height: 600,
         alt: 'Victor Alvar',
@@ -56,11 +56,11 @@ export const metadata = {
     },
   ],
   icons: {
-    icon: '/images/favicon/favicon.ico',
-    shortcut: '/images/favicon/favicon.ico',
+    icon: '/images/icons/favicon.ico',
+    shortcut: '/images/icons/favicon.ico',
     apple: [
       {
-        url: '/images/favicon/apple-touch-icon.png',
+        url: '/images/icons/apple-touch-icon.png',
         sizes: '180x180',
         type: 'image/png',
       },
@@ -69,13 +69,13 @@ export const metadata = {
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/images/favicon/favicon.ico',
+        url: '/images/icons/favicon.ico',
         sizes: '16x16',
       },
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/images/favicon/favicon-32x32.png',
+        url: '/images/icons/favicon-32x32.png',
         sizes: '32x32',
       },
     ],
