@@ -8,14 +8,12 @@ const Hero = () => {
       <div className={`${styles.container}`}>
         <div className={styles.wrap}>
           <div className={styles.content__wrap}>
-            <h1>
-              <span className={styles.first__title}>Build Products</span>
-              <span className={styles.second__title}>People Love</span>
-            </h1>
+            <h1>Unraveling the complexities of technology</h1>
             <span className={styles.text}>
               <p>
-                Building on Bitcoin is hard. Hiro's developer tools make it
-                easier.
+                Just like an artist, I want to shape and create forms, but not
+                with a sculpture or a painting, a modern renaissance artist
+                building and creating art in the form of code.
               </p>
             </span>
           </div>

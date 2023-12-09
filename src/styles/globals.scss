@@ -15,7 +15,7 @@
   --color-light-black: #1d1d1f;
   --color-white: #ffffff;
   --color-navbar: #ffffff;
-  --color-navbar-border: rgb(223, 227, 231);
+  --color-navbar-border: #ffffff;
   --color-black: #000000;
   --color-blue: #a6d9ff;
   --color-yellow: #f9f748;
@@ -64,12 +64,12 @@
   --border-params: solid 1px;
 
   //  Breakpoints
-  --xs-breakpoints: '400px'; // for small screen mobile
-  --sm-breakpoints: '600px'; // for mobile screen
-  --md-breakpoints: '910px'; // for tablets
-  --lg-breakpoints: '1160px'; // for laptops
-  --xl-breakpoints: '1440px'; // for desktop / monitors
-  --xxl-breakpoints: '1920px'; // for big screens
+  --breakpoints-xs: 400px; // for small screen mobile
+  --breakpoints-sm: 600px; // for mobile screen
+  --breakpoints-md: 954px; // for tablets
+  --breakpoints-lg: 1160px; // for laptops
+  --breakpoints-xl: 1440px; // for desktop / monitors
+  --breakpoints-xxl: 1920px; // for big screens
 }
 
 * {
@@ -194,4 +194,18 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.text-color-ok {
+  color: #37e0a7;
+}
+
+.text-dark-red {
+  color: #e70f0f;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url(/assets/fonts/Hack-NF.ttf);
+  display: swap;
 }

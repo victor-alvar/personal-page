@@ -11,4 +11,9 @@
   padding-left: var(--page-padding-horizontal);
   padding-right: var(--page-padding-horizontal);
   flex-direction: column;
+
+  @media screen and (max-width: 540px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

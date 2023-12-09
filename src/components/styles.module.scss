@@ -1,0 +1,27 @@
+.input__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  flex-shrink: 1;
+}
+
+.input {
+  background-color: var(--color-page);
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.username,
+.symbol,
+.dollar {
+  color: #3753e0;
+}
+
+.hostname {
+  color: var(--color-primary);
+}

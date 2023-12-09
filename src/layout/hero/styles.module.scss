@@ -17,6 +17,15 @@
   line-height: initial;
   padding: 2rem var(--page-padding-horizontal) 0;
   margin-bottom: 6rem;
+
+  @media screen and (max-width: 954px) {
+    height: 52rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .wrap {
@@ -35,34 +44,54 @@
   padding: 1.5rem 2rem;
 
   h1 {
-    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
     text-transform: uppercase;
     text-wrap: wrap;
 
-    .first__title {
-      display: flex;
-      margin-right: auto;
-      float: left;
+    @media screen and (max-width: 1190px) {
+      font-size: 3rem;
     }
 
-    .second__title {
-      display: flex;
-      margin-left: auto;
-      float: right;
-      margin-top: -2rem;
+    @media screen and (max-width: 940px) {
+      font-size: calc(3rem - 2vw);
+    }
+
+    @media screen and (max-width: 740px) {
+      font-size: calc(3rem - 3vw);
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: calc(3rem - 4vw);
     }
   }
 
+  @media screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+
   .text {
-    position: absolute;
-    left: 2rem;
-    top: 10rem;
-    width: max-content;
+    margin-top: 1rem;
+    width: 60%;
 
     p {
       font-family: var(--font-primary);
-      font-size: 1.25rem;
-      inline-size: 70%;
+      font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 630px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -9,12 +9,25 @@ const Cards = () => {
         <div className={styles.card}>
           <div className={styles.content}>
             <h3>About</h3>
-            <p>
-              These API endpoints are valuable for developers that want to query
-              information on addresses, balances, miner-participation,
-              inscriptions, and more. These API endpoints are valuable for
-              developers that want to query information on addresses, balances,
-              miner-participation, inscriptions, and more.
+            <p className={styles.text}>
+              Hi, I am Victor Alvar.
+              <p>
+                Welcome to my website! I'm a self-taught software developer
+                passionate about building products that resonate with both
+                businesses and people. Transforming ideas into innovative
+                solutions. Since the beginning of my journey as a developer, I
+                have been building intuitive and scalable applications, focusing
+                on the user experience. My skills and experience go beyond
+                fullstack development and data science.
+              </p>
+              <p>
+                I also like to design logos and brands visual identities, I did
+                all the design for my company Atalaso I had no knowledge or
+                experience at first but I quickly learned, the skills needed for
+                the job, I love this aspect of the business, and I am excited
+                about the future projects that await me, the possibilities and
+                the cool things I'm going to build next.
+              </p>
             </p>
           </div>
         </div>
