@@ -1,65 +1,70 @@
 'use client'
 import React, {useEffect, useRef} from 'react'
+import styles from './styles.module.scss'
 
-function MatrixBackground({timeout = 50}) {
-  const canvas = useRef()
+interface MatrixBackgroundProps {
+  timeout?: number
+}
+
+const MatrixBackground: React.FC<MatrixBackgroundProps> = ({timeout = 50}) => {
+  const canvas = useRef<HTMLCanvasElement | null>(null)
 
   useEffect(() => {
-    const context = canvas.current.getContext('2d')
+    // Ensure that canvas.current is defined
+    if (canvas.current) {
+      const context = canvas.current.getContext('2d')
 
-    const width = document.body.offsetWidth
-    const height = document.body.offsetHeight
-    canvas.current.width = width
-    canvas.current.height = height
+      if (context) {
+        const width = window.innerWidth
+        const height = window.innerHeight
 
-    context.fillStyle = '#000'
-    context.fillRect(0, 0, width, height)
+        // Set canvas dimensions
+        canvas.current.width = width
+        canvas.current.height = height
 
-    const columns = Math.floor(width / 20) + 1
-    const yPositions = Array.from({length: columns}).fill(0)
+        context.fillStyle = '#000'
+        context.fillRect(0, 0, width, height)
 
-    context.fillStyle = '#000'
-    context.fillRect(0, 0, width, height)
+        const columns = Math.floor(width / 20) + 1
+        const yPositions = Array.from({length: columns}).fill(0)
 
-    const matrixEffect = () => {
-      context.fillStyle = '#0001'
-      context.fillRect(0, 0, width, height)
+        context.fillStyle = '#000'
+        context.fillRect(0, 0, width, height)
 
-      context.fillStyle = '#ff4800'
-      context.font = '15pt monospace'
+        const matrixEffect = () => {
+          context.fillStyle = 'rgba(0, 0, 0, 0.1)'
+          context.fillRect(0, 0, width, height)
 
-      yPositions.forEach((y, index) => {
-        const text = String.fromCharCode(Math.random() * 128)
-        const x = index * 20
-        context.fillText(text, x, y)
+          context.fillStyle = '#ff4800'
+          context.font = '15pt monospace'
 
-        if (y > 100 + Math.random() * 10000) {
-          yPositions[index] = 0
-        } else {
-          yPositions[index] = y + 20
+          yPositions.forEach((y, index) => {
+            const text = String.fromCharCode(Math.random() * 128)
+            const x = index * 20
+
+            // Assert the type of y to number
+            const yPos: number = y as number
+
+            context.fillText(text, x, yPos)
+
+            if (yPos > 100 + Math.random() * 1000) {
+              yPositions[index] = 0
+            } else {
+              yPositions[index] = yPos + 20
+            }
+          })
         }
-      })
-    }
 
-    const interval = setInterval(matrixEffect, timeout)
-    return () => {
-      clearInterval(interval)
+        const interval = setInterval(matrixEffect, timeout)
+        return () => {
+          clearInterval(interval)
+        }
+      }
     }
   }, [canvas, timeout])
 
   return (
-    <div
-      style={{
-        background: '#transparent',
-        overflow: 'hidden',
-        position: 'absolute',
-        height: '100%',
-        width: '100%',
-        zIndex: -1,
-        left: '0',
-        top: '0',
-      }}
-    >
+    <div className={styles.wrapper}>
       <canvas ref={canvas} />
     </div>
   )
