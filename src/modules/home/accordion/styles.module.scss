@@ -9,4 +9,20 @@
   font-size: 2.7rem;
   text-transform: uppercase;
   inline-size: 50%;
+
+  @media screen and (max-width: 1140px) {
+    inline-size: 90%;
+  }
+
+  @media screen and (max-width: 940px) {
+    font-size: calc(2.4rem - 2vw);
+  }
+
+  @media screen and (max-width: 540px) {
+    inline-size: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.8rem;
+  }
 }

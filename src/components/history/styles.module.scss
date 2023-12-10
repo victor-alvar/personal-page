@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  flex-shrink: 1;
+}
+
+.content {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.paragraph {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  white-space: pre-wrap !important;
+  line-height: 20px;
+}
