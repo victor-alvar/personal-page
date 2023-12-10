@@ -1,0 +1,34 @@
+{
+  "title": "VTerminal",
+  "name": "Victor Alvar",
+  "ascii": "Victor Alvar",
+  "social": {
+    "github": "victor-alvar",
+    "linkedin": "victoralvar",
+    "twitter": "victorsalvar"
+  },
+  "email": "victor.alvar@tutanota.com",
+  "ps1_hostname": "victor-alvar",
+  "ps1_username": "visitor",
+  "job_title": "Fullstack Developer",
+  "colors": {
+    "light": {
+      "background": "#FBF1C9",
+      "foreground": "#3C3836",
+      "yellow": "#D79921",
+      "green": "#98971A",
+      "gray": "#7C6F64",
+      "blue": "#458588",
+      "red": "#CA2124"
+    },
+    "dark": {
+      "background": "#2E3440",
+      "foreground": "#E5E9F0",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    }
+  }
+}

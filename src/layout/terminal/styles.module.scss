@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: start;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  min-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.terminal__wrap {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1;
+  font-family: 'Hack';
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1e252e;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ebdbb2;
+    border-radius: 5px;
+
+    &:hover {
+      background: var(--color-primary);
+    }
+  }
+}
