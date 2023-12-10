@@ -9,7 +9,6 @@
 }
 
 .primary__nav {
-  -moz-box-align: center;
   align-items: center;
   display: flex;
   padding-top: 0.75rem;
@@ -17,7 +16,6 @@
   padding-left: var(--page-padding-horizontal);
   padding-right: var(--page-padding-horizontal);
   position: relative;
-  -moz-box-pack: justify;
   justify-content: space-between;
   max-width: 100%;
   margin-left: auto;
@@ -60,7 +58,6 @@
 .secondary__nav {
   display: grid;
   width: 100%;
-  -moz-box-align: center;
   align-items: center;
   transition: 0.2s ease-in-out;
   grid-template-columns: 1fr auto;
@@ -71,7 +68,6 @@
   list-style: none;
   display: flex;
   align-items: center;
-  -moz-box-align: center;
   gap: 3em;
   overflow-x: visible;
 }
