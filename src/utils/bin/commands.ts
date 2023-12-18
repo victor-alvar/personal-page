@@ -64,15 +64,15 @@ export const github = async (args: string[]): Promise<string> => {
 }
 
 export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`)
+  window.open(`https://linkedin.com/in/${config.social.linkedin}/`)
 
   return 'Opening linkedin...'
 }
 
 export const twitter = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`)
+  window.open(`https://twitter.com/${config.social.twitter}/`)
 
-  return 'Opening linkedin...'
+  return 'Opening twitter...'
 }
 
 // Typical linux commands
