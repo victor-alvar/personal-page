@@ -10,7 +10,7 @@ const Cards = () => {
           <div className={styles.content}>
             <h3>About</h3>
             <p className={styles.text}>
-              Hi, I am Victor Alvar.
+              Hi, I am Victor Alvarenga.
               <p>
                 Welcome to my website! I'm a self-taught software developer
                 passionate about building products that resonate with both

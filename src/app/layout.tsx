@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   description:
     'A software developer passionate about delivering exceptional IT services and building products that resonate with both businesses and people. Transforming ideas into innovative solutions.',
   keywords: [
-    'victor alvar',
+    'victor alvarenga',
     'victor',
-    'alvar',
+    'alvarenga',
     'technology solutions',
     'software experts',
     'IT consulting',

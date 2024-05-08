@@ -1,14 +1,14 @@
 {
   "title": "VTerminal",
-  "name": "Victor Alvar",
-  "ascii": "Victor Alvar",
+  "name": "Victor Alvarenga",
+  "ascii": "Victor Alvarenga",
   "social": {
     "github": "victor-alvar",
     "linkedin": "victoralvar",
     "twitter": "victorsalvar"
   },
   "email": "victor.alvar@tutanota.com",
-  "ps1_hostname": "victor-alvar",
+  "ps1_hostname": "victor-alvarenga",
   "ps1_username": "visitor",
   "job_title": "Fullstack Developer",
   "colors": {

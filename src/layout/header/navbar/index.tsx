@@ -14,13 +14,13 @@ const Navbar: React.FC = () => {
         <Link
           href="/"
           data-clog-click
-          aria-label="Victor Alvar"
+          aria-label="Victor Alvarenga"
           data-qa="logo"
           className={styles.logo__link}
         >
           <Image
             src={logo}
-            alt="Victor Alvar logo"
+            alt="Victor Alvarenga logo"
             width={200}
             quality={100}
             className={styles.logo}
