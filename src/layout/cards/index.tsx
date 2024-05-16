@@ -10,7 +10,7 @@ const Cards = () => {
           <div className={styles.content}>
             <h3>About</h3>
             <p className={styles.text}>
-              Hi, I am Victor Alvarenga.
+              Hi, I am João Victor Alvarenga.
               <p>
                 Welcome to my website! I'm a self-taught software developer
                 passionate about building products that resonate with both
@@ -57,7 +57,7 @@ const Cards = () => {
               </li>
               <li>
                 <a
-                  href="https://github.com/victor-alvar"
+                  href="https://github.com/joao-alvar"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
